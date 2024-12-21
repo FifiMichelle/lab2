@@ -49,8 +49,10 @@ void Mesh::setupMesh() {
 
 // Draw the mesh using a GLuint shader program
 void Mesh::Draw(GLuint shaderProgram) {
-    unsigned int diffuseIndex = 1;
-    unsigned int specularIndex = 1;
+        unsigned int diffuseNr  = 1;
+        unsigned int specularNr = 1;
+        unsigned int normalNr   = 1;
+        unsigned int heightNr   = 1;
 
     for (unsigned int i = 0; i < textures.size(); i++) {
         glActiveTexture(GL_TEXTURE0 + i); // Activate texture unit
@@ -58,10 +60,17 @@ void Mesh::Draw(GLuint shaderProgram) {
         std::string number;
         std::string name = textures[i].type;
 
-        if (name == "texture_diffuse")
-            number = std::to_string(diffuseIndex++);
-        else if (name == "texture_specular")
-            number = std::to_string(specularIndex++);
+        if(name == "texture_diffuse")
+                number = std::to_string(diffuseNr++);
+            else if(name == "texture_specular")
+                number = std::to_string(specularNr++); // transfer unsigned int to string
+            else if(name == "texture_normal")
+                number = std::to_string(normalNr++); // transfer unsigned int to string
+             else if(name == "texture_height")
+                number = std::to_string(heightNr++); // 
+
+        
+
 
         // Set the uniform for the texture
         GLint uniformLocation = glGetUniformLocation(shaderProgram, (name + number).c_str());
@@ -77,4 +86,3 @@ void Mesh::Draw(GLuint shaderProgram) {
     // Reset active texture
     glActiveTexture(GL_TEXTURE0);
 }
-

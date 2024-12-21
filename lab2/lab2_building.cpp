@@ -17,8 +17,7 @@
 #include <assimp/Importer.hpp>
 #include <assimp/scene.h>
 #include <assimp/postprocess.h>
-
-
+#include <glm/gtc/type_ptr.hpp>
 
 static GLFWwindow *window;
 static void key_callback(GLFWwindow *window, int key, int scancode, int action, int mode);
@@ -28,239 +27,370 @@ static glm::vec3 eye_center;
 static glm::vec3 lookat(0, 0, 0);
 static glm::vec3 up(0, 1, 0);
 
-// View control 
+// View control
 static float viewAzimuth = 0.f;
 static float viewPolar = 0.f;
 static float viewDistance = 300.0f;
 
-static GLuint LoadTextureTileBox(const char *texture_file_path) {
-    int w, h, channels;
-    uint8_t* img = stbi_load(texture_file_path, &w, &h, &channels, 3);
-    GLuint texture;
-    glGenTextures(1, &texture);  
-    glBindTexture(GL_TEXTURE_2D, texture);  
+static GLuint LoadTextureTileBox(const char *texture_file_path)
+{
+	int w, h, channels;
+	uint8_t *img = stbi_load(texture_file_path, &w, &h, &channels, 3);
+	GLuint texture;
+	glGenTextures(1, &texture);
+	glBindTexture(GL_TEXTURE_2D, texture);
 
-    // To tile textures on a box, we set wrapping to repeat
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);	
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	// To tile textures on a box, we set wrapping to repeat
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-    if (img) {
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, w, h, 0, GL_RGB, GL_UNSIGNED_BYTE, img);
-        glGenerateMipmap(GL_TEXTURE_2D);
-    } else {
-        std::cout << "Failed to load texture " << texture_file_path << std::endl;
-    }
-    stbi_image_free(img);
+	if (img)
+	{
+		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, w, h, 0, GL_RGB, GL_UNSIGNED_BYTE, img);
+		glGenerateMipmap(GL_TEXTURE_2D);
+	}
+	else
+	{
+		std::cout << "Failed to load texture " << texture_file_path << std::endl;
+	}
+	stbi_image_free(img);
 
-    return texture;
+	return texture;
 }
 
+struct Terrain
+{
+	GLuint vertexArrayID;
+	GLuint vertexBufferID;
+	GLuint indexBufferID;
+	GLuint textureID;
+	GLuint programID;
+	std::vector<float> vertices;
+	std::vector<unsigned int> indices;
 
+	void initialize(int width, int depth, const char *texturePath)
+	{
+		// Generate a grid of vertices
+		for (int z = 0; z <= depth; ++z)
+		{
+			for (int x = 0; x <= width; ++x)
+			{
+				vertices.push_back(x);	  // x position
+				vertices.push_back(0.0f); // y (height)
+				vertices.push_back(z);	  // z position
+			}
+		}
 
+		// Generate indices for triangle grid
+		for (int z = 0; z < depth; ++z)
+		{
+			for (int x = 0; x < width; ++x)
+			{
+				int topLeft = z * (width + 1) + x;
+				int bottomLeft = (z + 1) * (width + 1) + x;
 
-struct Terrain {
-    GLuint vertexArrayID;
-    GLuint vertexBufferID;
-    GLuint indexBufferID;
-    GLuint textureID;
-    GLuint programID;
-    std::vector<float> vertices;
-    std::vector<unsigned int> indices;
+				indices.push_back(topLeft);
+				indices.push_back(bottomLeft);
+				indices.push_back(topLeft + 1);
 
-    void initialize(int width, int depth, const char* texturePath) {
-        // Generate a grid of vertices
-        for (int z = 0; z <= depth; ++z) {
-            for (int x = 0; x <= width; ++x) {
-                vertices.push_back(x);           // x position
-                vertices.push_back(0.0f);       // y (height)
-                vertices.push_back(z);           // z position
-            }
-        }
+				indices.push_back(bottomLeft);
+				indices.push_back(bottomLeft + 1);
+				indices.push_back(topLeft + 1);
+			}
+		}
 
-        // Generate indices for triangle grid
-        for (int z = 0; z < depth; ++z) {
-            for (int x = 0; x < width; ++x) {
-                int topLeft = z * (width + 1) + x;
-                int bottomLeft = (z + 1) * (width + 1) + x;
+		// Set up OpenGL buffers
+		glGenVertexArrays(1, &vertexArrayID);
+		glBindVertexArray(vertexArrayID);
 
-                indices.push_back(topLeft);
-                indices.push_back(bottomLeft);
-                indices.push_back(topLeft + 1);
+		glGenBuffers(1, &vertexBufferID);
+		glBindBuffer(GL_ARRAY_BUFFER, vertexBufferID);
+		glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(float), vertices.data(), GL_STATIC_DRAW);
 
-                indices.push_back(bottomLeft);
-                indices.push_back(bottomLeft + 1);
-                indices.push_back(topLeft + 1);
-            }
-        }
+		glGenBuffers(1, &indexBufferID);
+		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBufferID);
+		glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(unsigned int), indices.data(), GL_STATIC_DRAW);
 
-        // Set up OpenGL buffers
-        glGenVertexArrays(1, &vertexArrayID);
-        glBindVertexArray(vertexArrayID);
+		// Load texture for terrain
+		textureID = LoadTextureTileBox(texturePath);
 
-        glGenBuffers(1, &vertexBufferID);
-        glBindBuffer(GL_ARRAY_BUFFER, vertexBufferID);
-        glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(float), vertices.data(), GL_STATIC_DRAW);
+		// Compile shaders for the terrain
+		programID = LoadShadersFromFile("../lab2/terrain.vert", "../lab2/terrain.frag");
+	}
 
-        glGenBuffers(1, &indexBufferID);
-        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBufferID);
-        glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(unsigned int), indices.data(), GL_STATIC_DRAW);
+	void render(glm::mat4 cameraMatrix)
+	{
+		glUseProgram(programID);
 
-        // Load texture for terrain
-        textureID = LoadTextureTileBox(texturePath);
+		glBindVertexArray(vertexArrayID);
 
-        // Compile shaders for the terrain
-        programID = LoadShadersFromFile("../lab2/terrain.vert", "../lab2/terrain.frag");
-    }
+		// Vertex position attribute
+		glEnableVertexAttribArray(0);
+		glBindBuffer(GL_ARRAY_BUFFER, vertexBufferID);
+		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
 
-    void render(glm::mat4 cameraMatrix) {
-        glUseProgram(programID);
+		// Apply model-view-projection transformation
+		glm::mat4 modelMatrix = glm::mat4(1.0f);
+		glm::mat4 mvp = cameraMatrix * modelMatrix;
+		GLuint mvpMatrixID = glGetUniformLocation(programID, "MVP");
+		glUniformMatrix4fv(mvpMatrixID, 1, GL_FALSE, &mvp[0][0]);
 
-        glBindVertexArray(vertexArrayID);
+		// Bind texture
+		glActiveTexture(GL_TEXTURE0);
+		glBindTexture(GL_TEXTURE_2D, textureID);
+		GLuint textureSamplerID = glGetUniformLocation(programID, "textureSampler");
+		glUniform1i(textureSamplerID, 0);
 
-        // Vertex position attribute
-        glEnableVertexAttribArray(0);
-        glBindBuffer(GL_ARRAY_BUFFER, vertexBufferID);
-        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+		// Render terrain
+		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBufferID);
+		glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, 0);
 
-        // Apply model-view-projection transformation
-        glm::mat4 modelMatrix = glm::mat4(1.0f);
-        glm::mat4 mvp = cameraMatrix * modelMatrix;
-        GLuint mvpMatrixID = glGetUniformLocation(programID, "MVP");
-        glUniformMatrix4fv(mvpMatrixID, 1, GL_FALSE, &mvp[0][0]);
+		glDisableVertexAttribArray(0);
+	}
 
-        // Bind texture
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, textureID);
-        GLuint textureSamplerID = glGetUniformLocation(programID, "textureSampler");
-        glUniform1i(textureSamplerID, 0);
-
-        // Render terrain
-        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBufferID);
-        glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, 0);
-
-        glDisableVertexAttribArray(0);
-    }
-
-    void cleanup() {
-        glDeleteBuffers(1, &vertexBufferID);
-        glDeleteBuffers(1, &indexBufferID);
-        glDeleteVertexArrays(1, &vertexArrayID);
-        glDeleteTextures(1, &textureID);
-        glDeleteProgram(programID);
-    }
+	void cleanup()
+	{
+		glDeleteBuffers(1, &vertexBufferID);
+		glDeleteBuffers(1, &indexBufferID);
+		glDeleteVertexArrays(1, &vertexArrayID);
+		glDeleteTextures(1, &textureID);
+		glDeleteProgram(programID);
+	}
 };
 
+struct Building
+{
+	glm::vec3 position; // Position of the box
+	glm::vec3 scale;	// Size of the box in each axis
 
-struct Building {
-	glm::vec3 position;		// Position of the box 
-	glm::vec3 scale;		// Size of the box in each axis
-	
-	GLfloat vertex_buffer_data[72] = {	// Vertex definition for a canonical box
+	GLfloat vertex_buffer_data[72] = {
+		// Vertex definition for a canonical box
 		// Front face
-		-1.0f, -1.0f, 1.0f, 
-		1.0f, -1.0f, 1.0f, 
-		1.0f, 1.0f, 1.0f, 
-		-1.0f, 1.0f, 1.0f, 
-		
-		// Back face 
-		1.0f, -1.0f, -1.0f, 
-		-1.0f, -1.0f, -1.0f, 
-		-1.0f, 1.0f, -1.0f, 
-		1.0f, 1.0f, -1.0f,
-		
-		// Left face
-		-1.0f, -1.0f, -1.0f, 
-		-1.0f, -1.0f, 1.0f, 
-		-1.0f, 1.0f, 1.0f, 
-		-1.0f, 1.0f, -1.0f, 
+		-1.0f,
+		-1.0f,
+		1.0f,
+		1.0f,
+		-1.0f,
+		1.0f,
+		1.0f,
+		1.0f,
+		1.0f,
+		-1.0f,
+		1.0f,
+		1.0f,
 
-		// Right face 
-		1.0f, -1.0f, 1.0f, 
-		1.0f, -1.0f, -1.0f, 
-		1.0f, 1.0f, -1.0f, 
-		1.0f, 1.0f, 1.0f,
+		// Back face
+		1.0f,
+		-1.0f,
+		-1.0f,
+		-1.0f,
+		-1.0f,
+		-1.0f,
+		-1.0f,
+		1.0f,
+		-1.0f,
+		1.0f,
+		1.0f,
+		-1.0f,
+
+		// Left face
+		-1.0f,
+		-1.0f,
+		-1.0f,
+		-1.0f,
+		-1.0f,
+		1.0f,
+		-1.0f,
+		1.0f,
+		1.0f,
+		-1.0f,
+		1.0f,
+		-1.0f,
+
+		// Right face
+		1.0f,
+		-1.0f,
+		1.0f,
+		1.0f,
+		-1.0f,
+		-1.0f,
+		1.0f,
+		1.0f,
+		-1.0f,
+		1.0f,
+		1.0f,
+		1.0f,
 
 		// Top face
-		-1.0f, 1.0f, 1.0f, 
-		1.0f, 1.0f, 1.0f, 
-		1.0f, 1.0f, -1.0f, 
-		-1.0f, 1.0f, -1.0f, 
+		-1.0f,
+		1.0f,
+		1.0f,
+		1.0f,
+		1.0f,
+		1.0f,
+		1.0f,
+		1.0f,
+		-1.0f,
+		-1.0f,
+		1.0f,
+		-1.0f,
 
 		// Bottom face
-		-1.0f, -1.0f, -1.0f, 
-		1.0f, -1.0f, -1.0f, 
-		1.0f, -1.0f, 1.0f, 
-		-1.0f, -1.0f, 1.0f, 
+		-1.0f,
+		-1.0f,
+		-1.0f,
+		1.0f,
+		-1.0f,
+		-1.0f,
+		1.0f,
+		-1.0f,
+		1.0f,
+		-1.0f,
+		-1.0f,
+		1.0f,
 	};
 
 	GLfloat color_buffer_data[72] = {
 		// Front, red
-		1.0f, 0.0f, 0.0f,
-		1.0f, 0.0f, 0.0f,
-		1.0f, 0.0f, 0.0f,
-		1.0f, 0.0f, 0.0f,
+		1.0f,
+		0.0f,
+		0.0f,
+		1.0f,
+		0.0f,
+		0.0f,
+		1.0f,
+		0.0f,
+		0.0f,
+		1.0f,
+		0.0f,
+		0.0f,
 
 		// Back, yellow
-		1.0f, 1.0f, 0.0f,
-		1.0f, 1.0f, 0.0f,
-		1.0f, 1.0f, 0.0f,
-		1.0f, 1.0f, 0.0f,
+		1.0f,
+		1.0f,
+		0.0f,
+		1.0f,
+		1.0f,
+		0.0f,
+		1.0f,
+		1.0f,
+		0.0f,
+		1.0f,
+		1.0f,
+		0.0f,
 
 		// Left, green
-		0.0f, 1.0f, 0.0f, 
-		0.0f, 1.0f, 0.0f,
-		0.0f, 1.0f, 0.0f,
-		0.0f, 1.0f, 0.0f,
+		0.0f,
+		1.0f,
+		0.0f,
+		0.0f,
+		1.0f,
+		0.0f,
+		0.0f,
+		1.0f,
+		0.0f,
+		0.0f,
+		1.0f,
+		0.0f,
 
 		// Right, cyan
-		0.0f, 1.0f, 1.0f, 
-		0.0f, 1.0f, 1.0f, 
-		0.0f, 1.0f, 1.0f, 
-		0.0f, 1.0f, 1.0f, 
+		0.0f,
+		1.0f,
+		1.0f,
+		0.0f,
+		1.0f,
+		1.0f,
+		0.0f,
+		1.0f,
+		1.0f,
+		0.0f,
+		1.0f,
+		1.0f,
 
 		// Top, blue
-		0.0f, 0.0f, 1.0f, 
-		0.0f, 0.0f, 1.0f,
-		0.0f, 0.0f, 1.0f,
-		0.0f, 0.0f, 1.0f,
+		0.0f,
+		0.0f,
+		1.0f,
+		0.0f,
+		0.0f,
+		1.0f,
+		0.0f,
+		0.0f,
+		1.0f,
+		0.0f,
+		0.0f,
+		1.0f,
 
 		// Bottom, magenta
-		1.0f, 0.0f, 1.0f,
-		1.0f, 0.0f, 1.0f, 
-		1.0f, 0.0f, 1.0f, 
-		1.0f, 0.0f, 1.0f,  
+		1.0f,
+		0.0f,
+		1.0f,
+		1.0f,
+		0.0f,
+		1.0f,
+		1.0f,
+		0.0f,
+		1.0f,
+		1.0f,
+		0.0f,
+		1.0f,
 	};
 
-	GLuint index_buffer_data[36] = {		// 12 triangle faces of a box
-		0, 1, 2, 	
-		0, 2, 3, 
-		
-		4, 5, 6, 
-		4, 6, 7, 
+	GLuint index_buffer_data[36] = {
+		// 12 triangle faces of a box
+		0,
+		1,
+		2,
+		0,
+		2,
+		3,
 
-		8, 9, 10, 
-		8, 10, 11, 
+		4,
+		5,
+		6,
+		4,
+		6,
+		7,
 
-		12, 13, 14, 
-		12, 14, 15, 
+		8,
+		9,
+		10,
+		8,
+		10,
+		11,
 
-		16, 17, 18, 
-		16, 18, 19, 
+		12,
+		13,
+		14,
+		12,
+		14,
+		15,
 
-		20, 21, 22, 
-		20, 22, 23, 
+		16,
+		17,
+		18,
+		16,
+		18,
+		19,
+
+		20,
+		21,
+		22,
+		20,
+		22,
+		23,
 	};
 
-    // TODO: Define UV buffer data
-    // ---------------------------
-    // ---------------------------
-    
+	// TODO: Define UV buffer data
+	// ---------------------------
+	// ---------------------------
+
 	// OpenGL buffers
-	GLuint vertexArrayID; 
-	GLuint vertexBufferID; 
-	GLuint indexBufferID; 
+	GLuint vertexArrayID;
+	GLuint vertexBufferID;
+	GLuint indexBufferID;
 	GLuint colorBufferID;
 	GLuint uvBufferID;
 	GLuint textureID;
@@ -270,7 +400,8 @@ struct Building {
 	GLuint textureSamplerID;
 	GLuint programID;
 
-	void initialize(glm::vec3 position, glm::vec3 scale) {
+	void initialize(glm::vec3 position, glm::vec3 scale)
+	{
 		// Define scale of the building geometry
 		this->position = position;
 		this->scale = scale;
@@ -279,20 +410,20 @@ struct Building {
 		glGenVertexArrays(1, &vertexArrayID);
 		glBindVertexArray(vertexArrayID);
 
-		// Create a vertex buffer object to store the vertex data		
+		// Create a vertex buffer object to store the vertex data
 		glGenBuffers(1, &vertexBufferID);
 		glBindBuffer(GL_ARRAY_BUFFER, vertexBufferID);
 		glBufferData(GL_ARRAY_BUFFER, sizeof(vertex_buffer_data), vertex_buffer_data, GL_STATIC_DRAW);
 
 		// Create a vertex buffer object to store the color data
-        // TODO: 
+		// TODO:
 		glGenBuffers(1, &colorBufferID);
 		glBindBuffer(GL_ARRAY_BUFFER, colorBufferID);
 		glBufferData(GL_ARRAY_BUFFER, sizeof(color_buffer_data), color_buffer_data, GL_STATIC_DRAW);
 
 		// TODO: Create a vertex buffer object to store the UV data
 		// --------------------------------------------------------
-        // --------------------------------------------------------
+		// --------------------------------------------------------
 
 		// Create an index buffer object to store the index data that defines triangle faces
 		glGenBuffers(1, &indexBufferID);
@@ -309,16 +440,17 @@ struct Building {
 		// Get a handle for our "MVP" uniform
 		mvpMatrixID = glGetUniformLocation(programID, "MVP");
 
-        // TODO: Load a texture 
-        // --------------------
-        // --------------------
+		// TODO: Load a texture
+		// --------------------
+		// --------------------
 
-        // TODO: Get a handle to texture sampler 
-        // -------------------------------------
-        // -------------------------------------
+		// TODO: Get a handle to texture sampler
+		// -------------------------------------
+		// -------------------------------------
 	}
 
-	void render(glm::mat4 cameraMatrix) {
+	void render(glm::mat4 cameraMatrix)
+	{
 		glUseProgram(programID);
 
 		glEnableVertexAttribArray(0);
@@ -331,12 +463,12 @@ struct Building {
 
 		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBufferID);
 
-		// TODO: Model transform 
+		// TODO: Model transform
 		// -----------------------
-        glm::mat4 modelMatrix = glm::mat4();    
-        // Scale the box along each axis to make it look like a building
-        modelMatrix = glm::scale(modelMatrix, scale);
-        // -----------------------
+		glm::mat4 modelMatrix = glm::mat4();
+		// Scale the box along each axis to make it look like a building
+		modelMatrix = glm::scale(modelMatrix, scale);
+		// -----------------------
 
 		// Set model-view-projection matrix
 		glm::mat4 mvp = cameraMatrix * modelMatrix;
@@ -344,31 +476,32 @@ struct Building {
 
 		// TODO: Enable UV buffer and texture sampler
 		// ------------------------------------------
-        // ------------------------------------------
+		// ------------------------------------------
 
 		// Draw the box
 		glDrawElements(
-			GL_TRIANGLES,      // mode
-			36,    			   // number of indices
-			GL_UNSIGNED_INT,   // type
-			(void*)0           // element array buffer offset
+			GL_TRIANGLES,	 // mode
+			36,				 // number of indices
+			GL_UNSIGNED_INT, // type
+			(void *)0		 // element array buffer offset
 		);
 
 		glDisableVertexAttribArray(0);
 		glDisableVertexAttribArray(1);
-        //glDisableVertexAttribArray(2);
+		// glDisableVertexAttribArray(2);
 	}
 
-	void cleanup() {
+	void cleanup()
+	{
 		glDeleteBuffers(1, &vertexBufferID);
 		glDeleteBuffers(1, &colorBufferID);
 		glDeleteBuffers(1, &indexBufferID);
 		glDeleteVertexArrays(1, &vertexArrayID);
-		//glDeleteBuffers(1, &uvBufferID);
-		//glDeleteTextures(1, &textureID);
+		// glDeleteBuffers(1, &uvBufferID);
+		// glDeleteTextures(1, &textureID);
 		glDeleteProgram(programID);
 	}
-}; 
+};
 
 int main(void)
 {
@@ -407,35 +540,36 @@ int main(void)
 	}
 
 	// Background
-	glClearColor(0.0f, 0.6f, 0.2f, 1.0f);
+	glClearColor(0.2f, 0.2f, 0.25f, 0.0f);
 
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_CULL_FACE);
 
 	// TODO: Create more buildings
-    // ---------------------------
-	Building b;
-	b.initialize(glm::vec3(0, 0, 0), glm::vec3(30, 30, 30));
+	// ---------------------------
+	// Building b;
+	// b.initialize(glm::vec3(0, 0, 0), glm::vec3(30, 30, 30));
 
 	Terrain terrain;
-    terrain.initialize(500, 500, "../lab2/textures/grass.jpg"); // Example: 100x100 grid with grass texture
-    
-	GLuint shaderProgram = LoadShadersFromFile("../lab2/model.vert", "../lab2/model.frag");
-    if (!shaderProgram) {
-        return -1;
-    }
-    Model myModel("../lab2/models/Tree.obj");
-	
-    // ---------------------------m
+	terrain.initialize(500, 500, "../lab2/textures/grass.jpg"); // Example: 100x100 grid with grass texture
+
+	GLuint shaderTree = LoadShadersFromFile("../lab2/model.vert", "../lab2/model.frag");
+	if (!shaderTree)
+	{
+		return -1;
+	}
+	Model TreeModel("../lab2/assets/Tree 02/Tree.obj");
+
+	// ---------------------------m
 
 	// Camera setup
-    eye_center.y = viewDistance * cos(viewPolar);
-    eye_center.x = viewDistance * cos(viewAzimuth);
-    eye_center.z = viewDistance * sin(viewAzimuth);
+	eye_center.y = viewDistance * cos(viewPolar);
+	eye_center.x = viewDistance * cos(viewAzimuth);
+	eye_center.z = viewDistance * sin(viewAzimuth);
 
 	glm::mat4 viewMatrix, projectionMatrix;
-    glm::float32 FoV = 45;
-	glm::float32 zNear = 0.1f; 
+	glm::float32 FoV = 45;
+	glm::float32 zNear = 0.1f;
 	glm::float32 zFar = 1000.0f;
 	projectionMatrix = glm::perspective(glm::radians(FoV), 4.0f / 3.0f, zNear, zFar);
 
@@ -446,15 +580,17 @@ int main(void)
 		viewMatrix = glm::lookAt(eye_center, lookat, up);
 		glm::mat4 vp = projectionMatrix * viewMatrix;
 
+
+		// Step 3: Apply model transformations
+		glm::mat4 model = glm::mat4(1.0f);			// Start with an identity matrix
+		model = glm::scale(model, glm::vec3(1000.0f)); // Scale the model by 2x
+		GLuint modelLoc = glGetUniformLocation(shaderTree, "model");
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		TreeModel.Draw(shaderTree);
 		// Render the building
-		//b.render(vp);
-        // rendering my grass terrain (flat)
+		// b.render(vp);
+		// rendering my grass terrain (flat)
 		terrain.render(vp);
-		myModel.Draw(shaderProgram);
-
-
-
-		
 
 		// Swap buffers
 		glfwSwapBuffers(window);
@@ -464,11 +600,9 @@ int main(void)
 	while (!glfwWindowShouldClose(window));
 
 	// Clean up
-	b.cleanup();
+	// b.cleanup();
 
 	terrain.cleanup();
-
-	
 
 	// Close OpenGL window and terminate GLFW
 	glfwTerminate();

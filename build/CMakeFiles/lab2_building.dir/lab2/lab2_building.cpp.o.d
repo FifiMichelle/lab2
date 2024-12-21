@@ -873,4 +873,17 @@ CMakeFiles/lab2_building.dir/lab2/lab2_building.cpp.o: \
   /usr/local/include/assimp/material.inl \
   /usr/local/include/assimp/anim.h /usr/local/include/assimp/metadata.h \
   /usr/local/include/assimp/postprocess.h \
-  /Users/FifiOnafuwa/Documents/FinalPro/lab2/lab2/mesh.h
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/lab2/mesh.h \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/type_ptr.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../gtc/quaternion.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat3x3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/quaternion.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../exponential.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat2x2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat2x3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat2x4.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat3x2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat3x4.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat4x2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat4x3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/type_ptr.inl

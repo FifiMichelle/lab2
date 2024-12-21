@@ -821,8 +821,18 @@ CMakeFiles/lab2_building.dir/lab2/lab2_building.cpp.o: /Users/FifiOnafuwa/Docume
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/geometric.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/glm.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/setup.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/exponential.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/geometric.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/constants.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/quaternion.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat2x2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat2x3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat2x4.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat3x2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat3x3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat3x4.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat4x2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat4x3.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat4x4.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/matrix.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/trigonometric.hpp \
@@ -832,6 +842,9 @@ CMakeFiles/lab2_building.dir/lab2/lab2_building.cpp.o: /Users/FifiOnafuwa/Docume
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/constants.inl \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/matrix_transform.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/matrix_transform.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/quaternion.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/type_ptr.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/type_ptr.inl \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/integer.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat2x2.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat2x3.hpp \
@@ -3400,6 +3413,10 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/packing.hpp:
 
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/type_ptr.inl:
+
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/type_ptr.hpp:
+
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/matrix_transform.inl:
 
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/constants.inl:
@@ -3563,6 +3580,8 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/default_sentinel.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsfilcnt_t.h:
+
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/quaternion.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
 
@@ -4439,6 +4458,8 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/stb/stb_image.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/year_month_day.h:
+
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/quaternion.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__utility/rel_ops.h:
 
