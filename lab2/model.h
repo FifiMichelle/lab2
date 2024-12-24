@@ -10,6 +10,9 @@
 #include <assimp/Importer.hpp>
 #include <assimp/scene.h>
 #include <assimp/postprocess.h>
+#include <render/shader.h>
+#include <glm/gtc/matrix_transform.hpp>
+
 
 #include "mesh.h"
 
@@ -18,29 +21,41 @@ unsigned int TextureFromFile(const char* path, const std::string& directory);
 
 class Model {
 public:
+    glm::vec3 position; // Position of the model in the world
+    glm::vec3 rotation; // Rotation angles (pitch, yaw, roll)
+    glm::vec3 scale;    // Scale factors
+    glm::mat4 modelMatrix;
     // Constructor: loads a model from a file
-    Model(const std::string& path) {
+    Model(const std::string& path) : position(glm::vec3(0.0f)), rotation(glm::vec3(0.0f)), scale(glm::vec3(1.0f)) {
         loadModel(path);
+       
     }
 
     // Draws the model
-    void Draw(GLuint shaderProgram) {
+    void Draw(GLuint shaderProgram, const glm::mat4& viewProjectionMatrix) {
+
+
         for (auto& mesh : meshes) {
             mesh.Draw(shaderProgram);
         }
     }
 
     // Optional: Draws the model using a Shader class
-    void Draw(const Shader& shader) {
+    void Draw(const Shader& shader, const glm::mat4& viewProjectionMatrix) {
         for (auto& mesh : meshes) {
             mesh.Draw(shader);
         }
     }
 
+        
+    
+
 private:
     std::vector<Mesh> meshes;   // List of meshes in the model
     std::string directory;      // Directory of the model
     std::vector<Texture> texturesLoaded; // Caches loaded textures
+     
+     
 
     // Loads a model from a file
     void loadModel(const std::string& path) {

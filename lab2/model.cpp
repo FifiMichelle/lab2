@@ -45,3 +45,4 @@ unsigned int TextureFromFile(const char* path, const std::string& directory) {
     glBindTexture(GL_TEXTURE_2D, 0); // Unbind the texture
     return textureID;
 }
+

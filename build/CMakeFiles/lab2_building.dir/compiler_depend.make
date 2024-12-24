@@ -281,7 +281,22 @@ CMakeFiles/lab2_building.dir/lab2/lab2_building.cpp.o: /Users/FifiOnafuwa/Docume
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__debug \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__debug_utils/randomize_range.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__errc \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_status.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__format/enable_insertable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/binary_negate.h \
@@ -560,9 +575,12 @@ CMakeFiles/lab2_building.dir/lab2/lab2_building.cpp.o: /Users/FifiOnafuwa/Docume
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cwctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/exception \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/float.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/initializer_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iosfwd \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iostream \
@@ -579,6 +597,7 @@ CMakeFiles/lab2_building.dir/lab2/lab2_building.cpp.o: /Users/FifiOnafuwa/Docume
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/optional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ratio \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/sstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdexcept \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdint.h \
@@ -1176,7 +1195,22 @@ CMakeFiles/lab2_building.dir/lab2/mesh.cpp.o: /Users/FifiOnafuwa/Documents/Final
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__debug \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__debug_utils/randomize_range.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__errc \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_status.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__format/enable_insertable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/binary_negate.h \
@@ -1455,9 +1489,12 @@ CMakeFiles/lab2_building.dir/lab2/mesh.cpp.o: /Users/FifiOnafuwa/Documents/Final
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cwctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/exception \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/float.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/initializer_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iosfwd \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iostream \
@@ -1474,6 +1511,7 @@ CMakeFiles/lab2_building.dir/lab2/mesh.cpp.o: /Users/FifiOnafuwa/Documents/Final
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/optional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ratio \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/sstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdexcept \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdint.h \
@@ -1730,7 +1768,8 @@ CMakeFiles/lab2_building.dir/lab2/mesh.cpp.o: /Users/FifiOnafuwa/Documents/Final
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/vec3.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/vec4.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/vector_relational.hpp \
-  /Users/FifiOnafuwa/Documents/FinalPro/lab2/lab2/Mesh.h
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/lab2/mesh.h \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/lab2/render/shader.h
 
 CMakeFiles/lab2_building.dir/lab2/model.cpp.o: /Users/FifiOnafuwa/Documents/FinalPro/lab2/lab2/model.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/Availability.h \
@@ -2011,7 +2050,22 @@ CMakeFiles/lab2_building.dir/lab2/model.cpp.o: /Users/FifiOnafuwa/Documents/Fina
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__debug \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__debug_utils/randomize_range.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__errc \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_status.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/u8path.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__format/enable_insertable.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/binary_negate.h \
@@ -2290,9 +2344,12 @@ CMakeFiles/lab2_building.dir/lab2/model.cpp.o: /Users/FifiOnafuwa/Documents/Fina
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cwctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/exception \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/filesystem \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/float.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/initializer_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iomanip \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iosfwd \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iostream \
@@ -2309,6 +2366,7 @@ CMakeFiles/lab2_building.dir/lab2/model.cpp.o: /Users/FifiOnafuwa/Documents/Fina
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/optional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ratio \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/sstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdexcept \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdint.h \
@@ -2475,6 +2533,7 @@ CMakeFiles/lab2_building.dir/lab2/model.cpp.o: /Users/FifiOnafuwa/Documents/Fina
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glad-3.3/include/KHR/khrplatform.h \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glad-3.3/include/glad/gl.h \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/glm.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/common.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/precision.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/setup.hpp \
@@ -2548,7 +2607,8 @@ CMakeFiles/lab2_building.dir/lab2/model.cpp.o: /Users/FifiOnafuwa/Documents/Fina
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/exponential.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/fwd.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/geometric.hpp \
-  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/glm.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/constants.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/quaternion.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/integer.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat2x2.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat2x3.hpp \
@@ -2566,9 +2626,16 @@ CMakeFiles/lab2_building.dir/lab2/model.cpp.o: /Users/FifiOnafuwa/Documents/Fina
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/vec3.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/vec4.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/vector_relational.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/constants.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/matrix_transform.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/matrix_transform.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/quaternion.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/type_ptr.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/type_ptr.inl \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/stb/stb_image.h \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/lab2/mesh.h \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/lab2/model.h \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/lab2/render/shader.h \
   /usr/local/include/assimp/Compiler/poppack1.h \
   /usr/local/include/assimp/Compiler/pushpack1.h \
   /usr/local/include/assimp/Importer.hpp \
@@ -3155,6 +3222,7 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cassert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cerrno \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cfloat \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/climits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cmath \
@@ -3173,6 +3241,7 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/errno.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/filesystem \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/initializer_list \
@@ -3216,6 +3285,7 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/errno.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/i386/_limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/i386/_mcontext.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/i386/_types.h \
@@ -3346,34 +3416,113 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_wchar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_wctype.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/__stddef_max_align_t.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/emmintrin.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mm_malloc.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/mmintrin.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/pmmintrin.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdint.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/xmmintrin.h \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glad-3.3/include/KHR/khrplatform.h \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glad-3.3/include/glad/gl.h \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/common.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/precision.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/setup.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/fwd.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/geometric.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat2x2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat2x3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat2x4.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat3x2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat3x3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat3x4.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat4x2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat4x3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat4x4.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/vec2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/vec3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/vec4.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/_fixes.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/_vectorize.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_common.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_common.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_exponential.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_exponential.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_geometric.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_geometric.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_integer.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_integer.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_matrix.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_matrix.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_packing.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_packing.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_trigonometric.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_trigonometric.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_vector_relational.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_vector_relational.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/precision.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/setup.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_float.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_half.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_half.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_int.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat2x2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat2x2.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat2x3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat2x3.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat2x4.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat2x4.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat3x2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat3x2.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat3x3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat3x3.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat3x4.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat3x4.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat4x2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat4x2.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat4x3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat4x3.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat4x4.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat4x4.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_vec.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_vec1.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_vec1.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_vec2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_vec2.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_vec3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_vec3.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_vec4.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_vec4.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/exponential.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/fwd.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/geometric.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/glm.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/integer.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat2x2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat2x3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat2x4.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat3x2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat3x3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat3x4.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat4x2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat4x3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat4x4.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/matrix.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/packing.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/trigonometric.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/vec2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/vec3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/vec4.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/vector_relational.hpp \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/lab2/render/shader.h
 
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iomanip:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/filesystem:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/space_info.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perms.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/path_iterator.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_type.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_options.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/copy_options.h:
-
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/lab2/model.cpp:
-
-/Users/FifiOnafuwa/Documents/FinalPro/lab2/lab2/Mesh.h:
 
 /usr/local/include/assimp/vector3.inl:
 
@@ -3423,10 +3572,6 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/matrix.hpp:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h:
-
-/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_vec4.hpp:
-
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_vec2.inl:
 
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_vec2.hpp:
@@ -3443,31 +3588,23 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat3x4.inl:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/perfect_forward.h:
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat3x3.inl:
 
-/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat2x4.hpp:
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat3x3.hpp:
+
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat3x2.hpp:
 
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat2x3.inl:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/construct_at.h:
-
-/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_int.hpp:
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat2x3.hpp:
 
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_half.inl:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_wint_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__assert:
-
-/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_float.hpp:
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_half.hpp:
 
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_vector_relational.inl:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/unwrap_ref.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/string_view:
-
-/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_vector_relational.hpp:
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_trigonometric.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_blkcnt_t.h:
 
@@ -3627,8 +3764,6 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_pthread/_pthread_attr_t.h:
 
-/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat2x3.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__split_buffer:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_endian.h:
@@ -3691,10 +3826,6 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/vector:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ino64_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/utility:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/year_month.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/unordered_set:
@@ -3706,6 +3837,12 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/distance.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_mbstate_t.h:
+
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_vector_relational.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/unwrap_ref.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/string_view:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_xlocale.h:
 
@@ -3750,6 +3887,8 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/initializer_list:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/float.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/filesystem:
 
 /usr/local/include/assimp/vector2.h:
 
@@ -3826,10 +3965,6 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__utility/priority_tag.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__utility/piecewise_construct.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/compose.h:
-
-/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat2x2.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/unreachable_sentinel.h:
 
@@ -3929,14 +4064,6 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_signed.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/common_reference.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/variant:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_same.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_reference_wrapper.h:
@@ -3962,12 +4089,6 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_nothrow_convertible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_move_constructible.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_minmax.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/indirectly_comparable.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_move_assignable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/partition_copy.h:
 
@@ -4011,8 +4132,6 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_class.h:
 
-/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_trigonometric.inl:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_bounded_array.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/includes.h:
@@ -4027,9 +4146,9 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_assignable.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_clamp.h:
-
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat2x2.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_clamp.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_array.h:
 
@@ -4051,12 +4170,6 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/extent.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/common_type.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/limits.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/decay.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bit_reference:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_nothrow_assignable.h:
@@ -4064,6 +4177,12 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/transform.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/copy_cv.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/variant:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/common_reference.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_u_char.h:
 
@@ -4081,9 +4200,9 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/float.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_entry.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/is_partitioned.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_entry.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/chrono:
 
@@ -4101,19 +4220,29 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/add_const.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__tuple:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/enable_view.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__thread/timed_backoff_policy.h:
 
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__thread/poll_with_backoff.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__utility/exchange.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_empty.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/view_interface.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/subrange.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_sample.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/size.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/concepts.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/enable_view.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/set_union.h:
+
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/precision.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/data.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__random/uniform_random_bit_generator.h:
 
@@ -4299,13 +4428,17 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_is_heap.h:
 
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat2x4.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/perfect_forward.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/operations.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/not_fn.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perm_options.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/tuple:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perm_options.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_referenceable.h:
 
@@ -4322,6 +4455,38 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__utility/in_place.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/bind.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_unique.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/allocation_guard.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__errc:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/space_info.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perms.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ino64_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/utility:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_remove.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/path_iterator.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_generate.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_minmax.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/indirectly_comparable.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_move_assignable.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__tuple:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/copy_options.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__concepts/swappable.h:
 
@@ -4370,6 +4535,16 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_time_type.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__concepts/invocable.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/common_type.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/limits.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/decay.h:
+
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_vec4.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_uint64_t.h:
 
@@ -4425,12 +4600,6 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_for_each.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__errc:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/allocation_guard.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_unique.h:
-
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_vec3.inl:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__locale:
@@ -4473,6 +4642,10 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/year.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/none_of.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/fstream:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_search.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/set_intersection.h:
@@ -4511,15 +4684,9 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__chrono/calendar.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/assert.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_time_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/size.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/limits.h:
 
@@ -4551,11 +4718,11 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/assume_aligned.h:
 
-/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_half.hpp:
-
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat4x4.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/sort_heap.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iomanip:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/sift_down.h:
 
@@ -4576,6 +4743,12 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/unary_function.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_trivially_destructible.h:
+
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_float.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_wint_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__assert:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/reverse_copy.h:
 
@@ -4627,17 +4800,21 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_search_n.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__thread/timed_backoff_policy.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__iterator/iter_swap.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/find_end.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/concepts.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_sample.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/half_positive.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_rotate.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/default_searcher.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_type.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_unbounded_array.h:
 
@@ -4670,8 +4847,6 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_remove_copy_if.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/next_permutation.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_remove.h:
 
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_common.hpp:
 
@@ -4707,19 +4882,29 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/for_each.h:
 
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat2x2.inl:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/compose.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_none_of.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/search.h:
+
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_int.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/construct_at.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_same.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/assert.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/binary_search.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ostream:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_move.h:
-
-/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/precision.hpp:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/set_union.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_nothrow_default_constructible.h:
 
@@ -4765,10 +4950,6 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_partition_point.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_generate.h:
-
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/func_integer.hpp:
 
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/trigonometric.hpp:
@@ -4801,13 +4982,13 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_id_t.h:
 
-/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat3x3.inl:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_null_pointer.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_copy_if.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_copy_backward.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_options.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/errno.h:
 
@@ -4827,8 +5008,6 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__concepts/copyable.h:
 
-/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat3x2.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_sort.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/integral_constant.h:
@@ -4841,12 +5020,6 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/sample.h:
 
-/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/vec2.hpp:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_unsigned.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__threading_support:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/function.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/partition_point.h:
@@ -4858,8 +5031,6 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__debug:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/qos.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/data.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/typeinfo:
 
@@ -4883,13 +5054,13 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_nothrow_copy_assignable.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/type_traits:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__string/extern_template_lists.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/min.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/temporary_buffer.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/type_traits:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__string/extern_template_lists.h:
 
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_vec3.hpp:
 
@@ -4971,8 +5142,6 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/for_each_n.h:
 
-/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/detail/type_mat3x3.hpp:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_wctype.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/find.h:
@@ -4992,10 +5161,6 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_sigset_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/fill_n.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/fstream:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/none_of.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_uint16_t.h:
 
@@ -5021,17 +5186,11 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/copy_if.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__utility/exchange.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/remove_cv.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/xlocale/_time.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_binary_search.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_empty.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__ranges/view_interface.h:
 
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/mat2x2.hpp:
 
@@ -5045,9 +5204,9 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/in_in_out_result.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/operations.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/ranges_reverse.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/operations.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_caddr_t.h:
 
@@ -5070,6 +5229,12 @@ CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o: /Users/FifiOnafuwa/Docume
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_suseconds_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/any_of.h:
+
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/vec2.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/is_unsigned.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__threading_support:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/nl_types.h:
 

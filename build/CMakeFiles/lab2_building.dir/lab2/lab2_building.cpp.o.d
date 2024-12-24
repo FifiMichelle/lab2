@@ -790,9 +790,7 @@ CMakeFiles/lab2_building.dir/lab2/lab2_building.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/stb/stb_image.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iostream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ios \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__locale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/locale.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/locale.h \
@@ -815,6 +813,7 @@ CMakeFiles/lab2_building.dir/lab2/lab2_building.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/istream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/bitset \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/locale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cstdarg \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/streambuf \
@@ -848,7 +847,40 @@ CMakeFiles/lab2_building.dir/lab2/lab2_building.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/filesystem \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_status.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iomanip \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__filesystem/u8path.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/sstream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iostream \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/stb/stb_image.h \
   /Users/FifiOnafuwa/Documents/FinalPro/lab2/lab2/model.h \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/type_ptr.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../gtc/quaternion.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat3x3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/quaternion.inl \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../exponential.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat2x2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat2x3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat2x4.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat3x2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat3x4.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat4x2.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat4x3.hpp \
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/type_ptr.inl \
   /usr/local/include/assimp/Importer.hpp \
   /usr/local/include/assimp/types.h /usr/local/include/assimp/defs.h \
   /usr/local/include/assimp/config.h /usr/local/include/assimp/vector2.h \
@@ -873,17 +905,4 @@ CMakeFiles/lab2_building.dir/lab2/lab2_building.cpp.o: \
   /usr/local/include/assimp/material.inl \
   /usr/local/include/assimp/anim.h /usr/local/include/assimp/metadata.h \
   /usr/local/include/assimp/postprocess.h \
-  /Users/FifiOnafuwa/Documents/FinalPro/lab2/lab2/mesh.h \
-  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/type_ptr.hpp \
-  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../gtc/quaternion.hpp \
-  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat3x3.hpp \
-  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/quaternion.inl \
-  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../exponential.hpp \
-  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat2x2.hpp \
-  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat2x3.hpp \
-  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat2x4.hpp \
-  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat3x2.hpp \
-  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat3x4.hpp \
-  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat4x2.hpp \
-  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/../mat4x3.hpp \
-  /Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glm-0.9.7.1/glm/gtc/type_ptr.inl
+  /Users/FifiOnafuwa/Documents/FinalPro/lab2/lab2/mesh.h

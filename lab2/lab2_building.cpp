@@ -547,19 +547,24 @@ int main(void)
 
 	// TODO: Create more buildings
 	// ---------------------------
-	// Building b;
-	// b.initialize(glm::vec3(0, 0, 0), glm::vec3(30, 30, 30));
+	Building b;
+	b.initialize(glm::vec3(0, 0, 0), glm::vec3(30, 30, 30));
 
 	Terrain terrain;
 	terrain.initialize(500, 500, "../lab2/textures/grass.jpg"); // Example: 100x100 grid with grass texture
+	std::vector<glm::vec3> treePositions = {
+		glm::vec3(0.0f, 0.0f, -5.0f),
+		glm::vec3(-5.0f, 0.0f, -10.0f),
+		glm::vec3(100.0f, 0.0f, -15.0f),
+		glm::vec3(15.0f, 0.0f, -20.0f),
+		// Add more positions as needed
+	};
 
-	GLuint shaderTree = LoadShadersFromFile("../lab2/model.vert", "../lab2/model.frag");
-	if (!shaderTree)
-	{
-		return -1;
-	}
+	Shader modelShader("../lab2/box.vert", "../lab2/box.frag");
 	Model TreeModel("../lab2/assets/Tree 02/Tree.obj");
+	
 
+    
 	// ---------------------------m
 
 	// Camera setup
@@ -572,6 +577,7 @@ int main(void)
 	glm::float32 zNear = 0.1f;
 	glm::float32 zFar = 1000.0f;
 	projectionMatrix = glm::perspective(glm::radians(FoV), 4.0f / 3.0f, zNear, zFar);
+     
 
 	do
 	{
@@ -579,14 +585,10 @@ int main(void)
 
 		viewMatrix = glm::lookAt(eye_center, lookat, up);
 		glm::mat4 vp = projectionMatrix * viewMatrix;
+		// Modify tree positions and make sure they're within the camera's view.
+		
 
-
-		// Step 3: Apply model transformations
-		glm::mat4 model = glm::mat4(1.0f);			// Start with an identity matrix
-		model = glm::scale(model, glm::vec3(1000.0f)); // Scale the model by 2x
-		GLuint modelLoc = glGetUniformLocation(shaderTree, "model");
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		TreeModel.Draw(shaderTree);
+		//TreeModel.Draw(modelShader, vp);
 		// Render the building
 		// b.render(vp);
 		// rendering my grass terrain (flat)
