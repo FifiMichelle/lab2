@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(lab2)
+project(FinalPro)
 
 # Set the C++ standard to C++11
 set(CMAKE_CXX_STANDARD 11)
@@ -21,19 +21,21 @@ include_directories(
 	external/glfw-3.1.2/include/
 	external/glm-0.9.7.1/
 	external/glad-opengl-3.3/include/
+	external/tinygltf/
 	external/
-	lab2/
+	FinalPro/
 	${ASSIMP_INCLUDE_DIRS}  # Add Assimp include directories
 )
 
-add_executable(lab2_building
-	lab2/lab2_building.cpp
-	lab2/render/shader.cpp
-	lab2/model.cpp
-	lab2/mesh.cpp
+add_executable(main
+	FinalPro/main.cpp
+	FinalPro/render/shader.cpp
+	FinalPro/model.cpp
+	FinalPro/mesh.cpp
+	FinalPro/render/texture.cpp
 
 )
-target_link_libraries(lab2_building
+target_link_libraries(main
 	${OPENGL_LIBRARY}
 	glfw
 	glad

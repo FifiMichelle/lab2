@@ -5,6 +5,7 @@ endif()
 ### GLAD ### 
 
 add_subdirectory (glad-3.3)
+add_compile_options(-Wno-deprecated-declarations)
 
 include_directories(
 	glad-3.3/include/
@@ -32,4 +33,10 @@ set(OPENGL_LIBRARY
 	${CMAKE_DL_LIBS}
 	${GLFW_LIBRARIES}
 )
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
 endif(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+
+
