@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lab2_building
+# Target rules for targets named main
 
 # Build rule for target.
-lab2_building: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab2_building
-.PHONY : lab2_building
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-lab2_building/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2_building.dir/build.make CMakeFiles/lab2_building.dir/build
-.PHONY : lab2_building/fast
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
 #=============================================================================
 # Target rules for targets named glad
@@ -155,101 +155,77 @@ glfw/fast:
 	$(MAKE) $(MAKESILENT) -f external/glfw-3.1.2/src/CMakeFiles/glfw.dir/build.make external/glfw-3.1.2/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
 
-lab2/lab2_building.o: lab2/lab2_building.cpp.o
-.PHONY : lab2/lab2_building.o
+FinalPro/main.o: FinalPro/main.cpp.o
+.PHONY : FinalPro/main.o
 
 # target to build an object file
-lab2/lab2_building.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2_building.dir/build.make CMakeFiles/lab2_building.dir/lab2/lab2_building.cpp.o
-.PHONY : lab2/lab2_building.cpp.o
+FinalPro/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/FinalPro/main.cpp.o
+.PHONY : FinalPro/main.cpp.o
 
-lab2/lab2_building.i: lab2/lab2_building.cpp.i
-.PHONY : lab2/lab2_building.i
+FinalPro/main.i: FinalPro/main.cpp.i
+.PHONY : FinalPro/main.i
 
 # target to preprocess a source file
-lab2/lab2_building.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2_building.dir/build.make CMakeFiles/lab2_building.dir/lab2/lab2_building.cpp.i
-.PHONY : lab2/lab2_building.cpp.i
+FinalPro/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/FinalPro/main.cpp.i
+.PHONY : FinalPro/main.cpp.i
 
-lab2/lab2_building.s: lab2/lab2_building.cpp.s
-.PHONY : lab2/lab2_building.s
+FinalPro/main.s: FinalPro/main.cpp.s
+.PHONY : FinalPro/main.s
 
 # target to generate assembly for a file
-lab2/lab2_building.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2_building.dir/build.make CMakeFiles/lab2_building.dir/lab2/lab2_building.cpp.s
-.PHONY : lab2/lab2_building.cpp.s
+FinalPro/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/FinalPro/main.cpp.s
+.PHONY : FinalPro/main.cpp.s
 
-lab2/mesh.o: lab2/mesh.cpp.o
-.PHONY : lab2/mesh.o
+FinalPro/render/shader.o: FinalPro/render/shader.cpp.o
+.PHONY : FinalPro/render/shader.o
 
 # target to build an object file
-lab2/mesh.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2_building.dir/build.make CMakeFiles/lab2_building.dir/lab2/mesh.cpp.o
-.PHONY : lab2/mesh.cpp.o
+FinalPro/render/shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/FinalPro/render/shader.cpp.o
+.PHONY : FinalPro/render/shader.cpp.o
 
-lab2/mesh.i: lab2/mesh.cpp.i
-.PHONY : lab2/mesh.i
+FinalPro/render/shader.i: FinalPro/render/shader.cpp.i
+.PHONY : FinalPro/render/shader.i
 
 # target to preprocess a source file
-lab2/mesh.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2_building.dir/build.make CMakeFiles/lab2_building.dir/lab2/mesh.cpp.i
-.PHONY : lab2/mesh.cpp.i
+FinalPro/render/shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/FinalPro/render/shader.cpp.i
+.PHONY : FinalPro/render/shader.cpp.i
 
-lab2/mesh.s: lab2/mesh.cpp.s
-.PHONY : lab2/mesh.s
+FinalPro/render/shader.s: FinalPro/render/shader.cpp.s
+.PHONY : FinalPro/render/shader.s
 
 # target to generate assembly for a file
-lab2/mesh.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2_building.dir/build.make CMakeFiles/lab2_building.dir/lab2/mesh.cpp.s
-.PHONY : lab2/mesh.cpp.s
+FinalPro/render/shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/FinalPro/render/shader.cpp.s
+.PHONY : FinalPro/render/shader.cpp.s
 
-lab2/model.o: lab2/model.cpp.o
-.PHONY : lab2/model.o
+FinalPro/render/texture.o: FinalPro/render/texture.cpp.o
+.PHONY : FinalPro/render/texture.o
 
 # target to build an object file
-lab2/model.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2_building.dir/build.make CMakeFiles/lab2_building.dir/lab2/model.cpp.o
-.PHONY : lab2/model.cpp.o
+FinalPro/render/texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/FinalPro/render/texture.cpp.o
+.PHONY : FinalPro/render/texture.cpp.o
 
-lab2/model.i: lab2/model.cpp.i
-.PHONY : lab2/model.i
-
-# target to preprocess a source file
-lab2/model.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2_building.dir/build.make CMakeFiles/lab2_building.dir/lab2/model.cpp.i
-.PHONY : lab2/model.cpp.i
-
-lab2/model.s: lab2/model.cpp.s
-.PHONY : lab2/model.s
-
-# target to generate assembly for a file
-lab2/model.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2_building.dir/build.make CMakeFiles/lab2_building.dir/lab2/model.cpp.s
-.PHONY : lab2/model.cpp.s
-
-lab2/render/shader.o: lab2/render/shader.cpp.o
-.PHONY : lab2/render/shader.o
-
-# target to build an object file
-lab2/render/shader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2_building.dir/build.make CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.o
-.PHONY : lab2/render/shader.cpp.o
-
-lab2/render/shader.i: lab2/render/shader.cpp.i
-.PHONY : lab2/render/shader.i
+FinalPro/render/texture.i: FinalPro/render/texture.cpp.i
+.PHONY : FinalPro/render/texture.i
 
 # target to preprocess a source file
-lab2/render/shader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2_building.dir/build.make CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.i
-.PHONY : lab2/render/shader.cpp.i
+FinalPro/render/texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/FinalPro/render/texture.cpp.i
+.PHONY : FinalPro/render/texture.cpp.i
 
-lab2/render/shader.s: lab2/render/shader.cpp.s
-.PHONY : lab2/render/shader.s
+FinalPro/render/texture.s: FinalPro/render/texture.cpp.s
+.PHONY : FinalPro/render/texture.s
 
 # target to generate assembly for a file
-lab2/render/shader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab2_building.dir/build.make CMakeFiles/lab2_building.dir/lab2/render/shader.cpp.s
-.PHONY : lab2/render/shader.cpp.s
+FinalPro/render/texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/FinalPro/render/texture.cpp.s
+.PHONY : FinalPro/render/texture.cpp.s
 
 # Help Target
 help:
@@ -261,19 +237,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... glad"
 	@echo "... glfw"
-	@echo "... lab2_building"
-	@echo "... lab2/lab2_building.o"
-	@echo "... lab2/lab2_building.i"
-	@echo "... lab2/lab2_building.s"
-	@echo "... lab2/mesh.o"
-	@echo "... lab2/mesh.i"
-	@echo "... lab2/mesh.s"
-	@echo "... lab2/model.o"
-	@echo "... lab2/model.i"
-	@echo "... lab2/model.s"
-	@echo "... lab2/render/shader.o"
-	@echo "... lab2/render/shader.i"
-	@echo "... lab2/render/shader.s"
+	@echo "... main"
+	@echo "... FinalPro/main.o"
+	@echo "... FinalPro/main.i"
+	@echo "... FinalPro/main.s"
+	@echo "... FinalPro/render/shader.o"
+	@echo "... FinalPro/render/shader.i"
+	@echo "... FinalPro/render/shader.s"
+	@echo "... FinalPro/render/texture.o"
+	@echo "... FinalPro/render/texture.i"
+	@echo "... FinalPro/render/texture.s"
 .PHONY : help
 
 

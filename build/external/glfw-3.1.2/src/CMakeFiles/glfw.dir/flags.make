@@ -6,5 +6,5 @@ C_DEFINES = -D_GLFW_USE_CONFIG_H -Dglfw_EXPORTS
 
 C_INCLUDES = -I/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glad-3.3/include -I/Users/FifiOnafuwa/Documents/FinalPro/lab2/external/glfw-3.1.2/src -I/Users/FifiOnafuwa/Documents/FinalPro/lab2/build/external/glfw-3.1.2/src -F/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks
 
-C_FLAGS =  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC   -Wall -fvisibility=hidden  -fno-common
+C_FLAGS =  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC   -Wall -fvisibility=hidden  -fno-common -Wno-deprecated-declarations
 

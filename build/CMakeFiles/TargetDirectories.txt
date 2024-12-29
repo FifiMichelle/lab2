@@ -1,4 +1,4 @@
-/Users/FifiOnafuwa/Documents/FinalPro/lab2/build/CMakeFiles/lab2_building.dir
+/Users/FifiOnafuwa/Documents/FinalPro/lab2/build/CMakeFiles/main.dir
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/build/CMakeFiles/edit_cache.dir
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/build/CMakeFiles/rebuild_cache.dir
 /Users/FifiOnafuwa/Documents/FinalPro/lab2/build/external/CMakeFiles/edit_cache.dir

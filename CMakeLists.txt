@@ -28,11 +28,9 @@ include_directories(
 )
 
 add_executable(main
-	FinalPro/main.cpp
-	FinalPro/render/shader.cpp
-	FinalPro/model.cpp
-	FinalPro/mesh.cpp
-	FinalPro/render/texture.cpp
+FinalPro/main.cpp
+FinalPro/render/shader.cpp
+FinalPro/render/texture.cpp
 
 )
 target_link_libraries(main

@@ -6,7 +6,8 @@
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/lab2",
                 "${workspaceFolder}/external/glad-3.3/include",
-                "${workspaceFolder}/FinalPro"
+                "${workspaceFolder}/FinalPro",
+                "${workspaceFolder}/external/glfw-3.1.2/include"
             ],
             "defines": [],
             "macFrameworkPath": [

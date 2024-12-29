@@ -152,7 +152,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=lab2
+CMAKE_PROJECT_NAME:STATIC=FinalPro
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/ranlib
@@ -227,6 +227,15 @@ CORE_FOUNDATION_FRAMEWORK:FILEPATH=/Library/Developer/CommandLineTools/SDKs/MacO
 
 //Path to a library.
 CORE_VIDEO_FRAMEWORK:FILEPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/CoreVideo.framework
+
+//Value Computed by CMake
+FinalPro_BINARY_DIR:STATIC=/Users/FifiOnafuwa/Documents/FinalPro/lab2/build
+
+//Value Computed by CMake
+FinalPro_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+FinalPro_SOURCE_DIR:STATIC=/Users/FifiOnafuwa/Documents/FinalPro/lab2
 
 //Value Computed by CMake
 GLFW_BINARY_DIR:STATIC=/Users/FifiOnafuwa/Documents/FinalPro/lab2/build/external/glfw-3.1.2
