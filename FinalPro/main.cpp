@@ -60,106 +60,6 @@ static GLuint LoadTextureTileBox(const char *texture_file_path)
 	return texture;
 }
 
-struct Terrain
-{
-	GLuint vertexArrayID;
-	GLuint vertexBufferID;
-	GLuint indexBufferID;
-	GLuint textureID;
-	GLuint programID;
-	std::vector<float> vertices;
-	std::vector<unsigned int> indices;
-
-	void initialize(int width, int depth, const char *texturePath)
-	{
-		// Generate a grid of vertices
-		for (int z = 0; z <= depth; ++z)
-		{
-			for (int x = 0; x <= width; ++x)
-			{
-				vertices.push_back(x);	  // x position
-				vertices.push_back(0.0f); // y (height)
-				vertices.push_back(z);	  // z position
-			}
-		}
-
-		// Generate indices for triangle grid
-		for (int z = 0; z < depth; ++z)
-		{
-			for (int x = 0; x < width; ++x)
-			{
-				int topLeft = z * (width + 1) + x;
-				int bottomLeft = (z + 1) * (width + 1) + x;
-
-				indices.push_back(topLeft);
-				indices.push_back(bottomLeft);
-				indices.push_back(topLeft + 1);
-
-				indices.push_back(bottomLeft);
-				indices.push_back(bottomLeft + 1);
-				indices.push_back(topLeft + 1);
-			}
-		}
-
-		// Set up OpenGL buffers
-		glGenVertexArrays(1, &vertexArrayID);
-		glBindVertexArray(vertexArrayID);
-
-		glGenBuffers(1, &vertexBufferID);
-		glBindBuffer(GL_ARRAY_BUFFER, vertexBufferID);
-		glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(float), vertices.data(), GL_STATIC_DRAW);
-
-		glGenBuffers(1, &indexBufferID);
-		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBufferID);
-		glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(unsigned int), indices.data(), GL_STATIC_DRAW);
-
-		// Load texture for terrain
-		textureID = LoadTextureTileBox(texturePath);
-
-		// Compile shaders for the terrain
-		programID = LoadShadersFromFile("../lab2/terrain.vert", "../lab2/terrain.frag");
-	}
-
-	void render(glm::mat4 cameraMatrix)
-	{
-		glUseProgram(programID);
-
-		glBindVertexArray(vertexArrayID);
-
-		// Vertex position attribute
-		glEnableVertexAttribArray(0);
-		glBindBuffer(GL_ARRAY_BUFFER, vertexBufferID);
-		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
-
-		// Apply model-view-projection transformation
-		glm::mat4 modelMatrix = glm::mat4(1.0f);
-		glm::mat4 mvp = cameraMatrix * modelMatrix;
-		GLuint mvpMatrixID = glGetUniformLocation(programID, "MVP");
-		glUniformMatrix4fv(mvpMatrixID, 1, GL_FALSE, &mvp[0][0]);
-
-		// Bind texture
-		glActiveTexture(GL_TEXTURE0);
-		glBindTexture(GL_TEXTURE_2D, textureID);
-		GLuint textureSamplerID = glGetUniformLocation(programID, "textureSampler");
-		glUniform1i(textureSamplerID, 0);
-
-		// Render terrain
-		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBufferID);
-		glDrawElements(GL_TRIANGLES, indices.size(), GL_UNSIGNED_INT, 0);
-
-		glDisableVertexAttribArray(0);
-	}
-
-	void cleanup()
-	{
-		glDeleteBuffers(1, &vertexBufferID);
-		glDeleteBuffers(1, &indexBufferID);
-		glDeleteVertexArrays(1, &vertexArrayID);
-		glDeleteTextures(1, &textureID);
-		glDeleteProgram(programID);
-	}
-};
-
 struct Building
 {
 	glm::vec3 position; // Position of the box
@@ -550,8 +450,7 @@ int main(void)
 	Building b;
 	b.initialize(glm::vec3(0, 0, 0), glm::vec3(30, 30, 30));
 
-	Terrain terrain;
-	terrain.initialize(500, 500, "../lab2/textures/grass.jpg"); // Example: 100x100 grid with grass texture
+	
 	std::vector<glm::vec3> treePositions = {
 		glm::vec3(0.0f, 0.0f, -5.0f),
 		glm::vec3(-5.0f, 0.0f, -10.0f),
@@ -590,8 +489,7 @@ int main(void)
 		// Render the building
 		// b.render(vp);
 		// rendering my grass terrain (flat)
-		terrain.render(vp);
-
+		
 		// Swap buffers
 		glfwSwapBuffers(window);
 		glfwPollEvents();
@@ -602,7 +500,7 @@ int main(void)
 	// Clean up
 	// b.cleanup();
 
-	terrain.cleanup();
+	
 
 	// Close OpenGL window and terminate GLFW
 	glfwTerminate();
